@@ -1,0 +1,72 @@
+.archivements-container {
+    padding:94px 0px;
+}
+
+.arch-container{
+    width:1170px;
+}
+
+.arch-item-list{
+    width:1170px;
+}
+.arch-item-list-view{
+    width:100%;
+}
+.arch-item {
+    padding:32px 65px;
+    width: 292px;
+    height: 265px;
+    transition: .2s;
+    cursor: pointer;
+    background: white;
+}
+
+.arch-item:hover{
+    background: rgba(98, 69, 237, 0.05);
+}
+
+.arch-item>img{
+    width:70px;
+}
+
+
+.officer-container{
+    width:1170px;
+    padding:145px 0px;
+}
+
+.officer-item{
+    width: 369px;
+    height: 139px;
+
+    background: linear-gradient(154.85deg, #6245ED 5.68%, #DD39FC 111.41%);
+    border-radius: 20px;
+}
+
+.contract-container{
+    width:1170px;
+    height: 80px;
+    background: #6245ED;
+}
+@media only screen and (max-width: 1023px) 
+{
+    .officer-item{
+        width: 369px!important;
+    }
+}
+@media only screen and (max-width: 1170px) 
+{
+    .officer-item{
+        width:100%;
+    }
+    .contract-container{
+        width:100%!important;
+        flex-direction: column;
+    }
+    .officer-container{
+        width:100%!important;
+    }
+    .arch-container{
+        width:100%!important;
+    }
+}

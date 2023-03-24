@@ -1,0 +1,41 @@
+.subscribe-container{
+    padding:130px 30px;
+    background-image: url("../img/Bg2.png");
+    height:500px;
+}
+.subscribe-body{
+    width:970px;
+}
+.subscribe-detail-container{
+    position: relative;
+}
+
+.subscribe-input{
+    width: 100%;
+    padding:20px 50px;
+    height: 80px;
+    border-radius: 100px;
+    border: 0px;
+}
+
+.subscribe-btn {
+    cursor: pointer;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 23px 35px;
+    gap: 10px;
+
+    position: absolute;
+    right: 7px;
+    top:4px;
+transition: .3s;
+    background: linear-gradient(95.05deg, #6245ED 5.65%, #DD39FC 115.9%);
+    border-radius: 50px;
+}
+
+.subscribe-btn:hover{
+    top:3px;
+    box-shadow: 5px 5px 5px 5px rgba(188, 60, 248, 0.35);
+}

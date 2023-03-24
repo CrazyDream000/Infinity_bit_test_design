@@ -1,0 +1,44 @@
+.next-bigcex-container{
+    background-image: url("../img/Bg1.png");
+    position:relative;
+    height:600px;
+}
+@media only screen and (max-width: 1175px) 
+{
+    .next-bigcex-container{
+        padding: 0px!important;
+        width:100%;
+    }
+    .next-bigcex-detail-caption>div{
+        margin: 0px!important;
+        text-align: center!important;
+        width:100%;
+    }
+    .next-bigcex-detail-caption{
+        z-index: 5;
+        width:100%;
+        flex-direction: column!important;
+        padding:171px 50px!important;
+    }
+    .bit-logo{
+        width: 250px!important;
+        height: 250px!important;
+    }
+    .txt {
+        text-align: center!important;
+    }
+}
+.next-bigcex-detail-caption{
+    z-index: 5;
+    padding:171px 150px;
+    width:100%;
+}
+
+.bit-logo{
+    width: 380px;
+    height: 380px;
+}
+
+.next-cex-detail{
+    width:400px;
+}

@@ -1,0 +1,212 @@
+.roadmap-container{
+    padding:100px 200px;
+}
+.cd-timeline {
+    margin: 2em auto;
+  }
+  
+  .cd-timeline__container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .cd-timeline__container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    height: 100%;
+    width: 4px;
+    background: rgba(98, 69, 237, 0.1);
+  }
+  
+  @media only screen and (min-width: 1170px) {
+    .cd-timeline {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+    .cd-timeline__container::before {
+      left: 50%;
+      margin-left: -2px;
+    }
+  }
+  
+  .cd-timeline__block {
+    position: relative;
+    margin: 2em 0;
+  }
+  
+  .cd-timeline__block:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .cd-timeline__block:first-child {
+    margin-top: 0;
+  }
+  
+  .cd-timeline__block:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media only screen and (min-width: 1170px) {
+    .cd-timeline__block {
+      margin: 4em 0;
+    }
+  }
+  
+  .cd-timeline__milestone {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+    
+    background: #6245ED;
+    border-radius: 50%;
+  }
+  
+  .light .cd-timeline__milestone {
+    background: #fff;
+  }
+  
+  @media only screen and (min-width: 1170px) {
+    .cd-timeline__milestone {
+      width: 25px;
+      height: 25px;
+      left: 50%;
+      top: 0;
+      margin-left: -12px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  
+  .cd-timeline__content_miss {
+    position: relative;
+    margin-left: 2rem;
+    margin-top: -3px;
+    padding:20px;
+    background: rgba(98, 69, 237, 0.05);
+    border: 1px solid lightgrey;
+  }
+
+  .cd-timeline__content {
+    position: relative;
+    margin-left: 2rem;
+    margin-top: -3px;
+    padding:20px;
+    background: linear-gradient(180deg, #6245ED 5.39%, #DD39FC 105.65%);
+  }
+  
+  .cd-timeline__content h2 {
+    color: #303e49;
+  }
+  
+  .cd-timeline__date {
+    padding: 0 0 .4em 0;
+    text-transform: uppercase;
+    color: #ff78cb;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+  }
+  
+
+  .cd-timeline-arrow{
+    position:absolute;
+    border-top: transparent solid 16px;
+    border-bottom: transparent solid 16px;
+    border-left: #6245ED solid 16px;
+    top:0;
+    right:-16px;
+  }
+  .cd-timeline-arrow-miss{
+    position:absolute;
+    border-top: transparent solid 16px;
+    border-bottom: transparent solid 16px;
+    border-left: lightgrey solid 16px;
+    top:0;
+    right:-16px;
+  }
+  @media only screen and (max-width: 1170px) {
+    .roadmap-container{
+        padding:100px 50px;
+    }
+    .cd-timeline-arrow {
+        position:absolute;
+        border-top: transparent solid 16px;
+        border-bottom: transparent solid 16px;
+        border-right: #6245ED solid 16px;
+        border-left:none;
+        top:0;
+        right:100%;
+    }
+    .cd-timeline-arrow-miss {
+      position:absolute;
+      border-top: transparent solid 16px;
+      border-bottom: transparent solid 16px;
+      border-right: lightgrey solid 16px;
+      border-left:none;
+      top:0;
+      right:100%;
+  }
+  }
+  @media only screen and (min-width: 1170px) {
+    .cd-timeline__content {
+      width: 45%;
+      text-align: right;
+      margin-left: 0;
+    }
+    .cd-timeline__content_miss {
+        width: 45%;
+        text-align: right;
+        margin-left: 0;
+      }
+    .cd-timeline__date {
+      position: absolute;
+      padding: .4em 0;
+      width: 100%;
+      left: 122%;
+      top: 0;
+      text-align: left;
+    }
+    .cd-timeline__block:nth-child(odd) .cd-timeline__content {
+      float: right;
+      text-align: left;
+      margin-left: 0;
+    }
+    .cd-timeline__block:nth-child(odd) .cd-timeline__content_miss {
+        float: right;
+        text-align: left;
+        margin-left: 0;
+    }
+    .cd-timeline__block:nth-child(odd) .cd-timeline-arrow {
+        position:absolute;
+        border-top: transparent solid 16px;
+        border-bottom: transparent solid 16px;
+        border-right: #6245ED solid 16px;
+        border-left:none;
+        top:0;
+        right:100%;
+    }
+    .cd-timeline__block:nth-child(odd) .cd-timeline-arrow-miss {
+      position:absolute;
+      border-top: transparent solid 16px;
+      border-bottom: transparent solid 16px;
+      border-right: lightgrey  solid 16px;
+      border-left:none;
+      top:0;
+      right:100%;
+  }
+    .cd-timeline__block:nth-child(odd) .cd-timeline__date {
+      left: auto;
+      right: 120%;
+      text-align: right;
+    }
+  }

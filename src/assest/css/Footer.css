@@ -1,0 +1,36 @@
+.footer-container{
+    background-color: black;
+    padding:131px 0px;
+}
+.footer-detail-container{
+    width:1170px;
+}
+
+.twitter-info {
+    background-color: white;
+    width: 100%!important;
+    padding:40px 50px;
+}
+
+.email-input{
+    height:65px;
+    padding:0px 20px;
+}
+
+@media only screen and (max-width: 1024px) 
+{
+    .footer-detail-container{
+        padding:0px 50px;
+        width:100%;
+    }
+    .twitter-info{
+       flex-direction: column!important;
+    }
+    .touch-info{
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .touch-info>div{
+        width:100%;
+    }
+}

@@ -1,0 +1,29 @@
+.token-usage-container{
+    padding:130px 150px;
+    background-color: #F7F5FE;;
+}
+
+@media only screen and (max-width:1024px)
+{
+    .token-usage-container{
+        padding:130px 0px!important;
+        flex-direction: column!important;
+    }
+    .token-usage-container>div{
+        width:100%!important;
+        border: 0px !important;
+    }
+}
+.token-usage-chart{
+    width: 365px !important;
+}
+
+.token-color-item{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.token-list-item{
+    margin-top: 10px;
+}
